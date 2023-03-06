@@ -183,7 +183,7 @@ func getWiFis() ([]wifi, error) {
 }
 
 func dmenu(args []string,items []string) (string, error) {
-    dm := exec.Command("dmenu", args...)
+    dm := exec.Command("dmenu", append([]string{"-S"},args...)...)
     reader := strings.NewReader(strings.Join(items,"\n"))
     dm.Stdin = reader
     bytes, err := dm.Output()
