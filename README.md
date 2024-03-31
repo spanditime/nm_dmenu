@@ -1,5 +1,7 @@
 # nm_dmenu
 Simple programm for managing NetworkManager connections via dmenu written on golang
+# WARNING
+This project is made for fun and no longer used / maintained - please don't use it in your systems.
 ## Features
 - Connect to exisiting NM wifi or wired connections
 - Connect to new wifi connections that dont require passphrase
